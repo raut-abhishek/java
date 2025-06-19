@@ -7,6 +7,7 @@ public class ForLoop {
         for(int a = 1; a<=5; a++){
             System.out.println(num);
         }
+        
     }
     
 }
