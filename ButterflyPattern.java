@@ -31,7 +31,7 @@ public class ButterflyPattern {
             for (int j = 1; j <= spaces; j++) {
                 System.out.print(" ");
             }
-            //2nd Part
+            // 2nd Part
             for (int j = 1; j <= i; j++) {
                 System.out.print("*");
             }
