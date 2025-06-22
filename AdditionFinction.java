@@ -1,6 +1,6 @@
 import java.util.*;
 public class AdditionFinction {
-    public static void AdditionFunction(int a,int b){
+    public static void Addition(int a,int b){
         System.out.println("Addition = "+(a+b));
         return;
     }
@@ -10,7 +10,7 @@ public class AdditionFinction {
         int a = sc.nextInt();
         System.out.print("Enter second number = ");
         int b = sc.nextInt();
-        AdditionFunction(a, b);
+        Addition(a, b);
 
     }
 }
