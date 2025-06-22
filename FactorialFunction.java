@@ -2,10 +2,10 @@ import java.util.*;
 
 public class FactorialFunction {
     public static void PrintFactorial(int a) {
-        if(a<0){
+        if (a < 0) {
             System.out.println("please enter a valid number");
             return;
-            
+
         }
         int factorial = 1;
         for (int i = a; i >= 1; i--) {
