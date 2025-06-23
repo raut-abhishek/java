@@ -1,16 +1,15 @@
 import java.util.*;
+
 public class GreaterOfTwoFunction {
     public static void GreaterOfTwo(int a, int b) {
-        if(a==b){
+        if (a == b) {
             System.out.println("Both numbers are equal.");
             return;
-        }
-        else if (a>b){
-            System.out.println(a+" is grater.");
+        } else if (a > b) {
+            System.out.println(a + " is grater.");
             return;
-        }
-        else{
-            System.out.println(b+" is grater.");
+        } else {
+            System.out.println(b + " is grater.");
         }
     }
 
