@@ -20,8 +20,8 @@ public class Laptop {
         System.out.println("Brand : " + brand);
         System.out.println("Model : " + model);
         System.out.println("Processor : " + processor);
-        System.out.println("RamSize : " + ramSize);
-        System.out.println("Storage : " + storage);
+        System.out.println("RamSize : " + ramSize + "GB");
+        System.out.println("Storage : " + storage + "GB");
         System.out.println("Price : " + price);
     }
 
