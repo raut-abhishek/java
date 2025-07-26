@@ -22,7 +22,7 @@ public class Laptop {
         System.out.println("Processor : " + processor);
         System.out.println("RamSize : " + ramSize + "GB");
         System.out.println("Storage : " + storage + "GB");
-        System.out.println("Price : " + price);
+        System.out.println("Price : ₹" + price);
     }
 
     public static void main(String[] args) {
