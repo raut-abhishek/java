@@ -1,4 +1,4 @@
-// sum od all digits in a number
+// sum of all digits in a number
 public class sumOfDigits {
     public static int sumDigits(int n) {
         if (n == 0) return 0;
