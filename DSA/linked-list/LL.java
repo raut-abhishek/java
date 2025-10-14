@@ -48,7 +48,7 @@ class LL {
         }
         Node currNode = head;
         while(currNode != null){
-            System.out.println(currNode.data + " -> ");
+            System.out.print(currNode.data + " -> ");
             currNode = currNode.next;
         }
         System.out.println("NULL");
@@ -61,7 +61,13 @@ class LL {
         list.addFirst("a");
         list.addFirst("is");
         list.printList();
-
         
+        list.addLast(" linked list");
+        list.printList();
+
+        list.addFirst("This");
+        list.printList();
+
+
     }
 }
