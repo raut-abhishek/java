@@ -62,6 +62,29 @@ class LinkedList {
 
         curr.next = curr.next.next;
     }
+
+    void insertAtPosition(int data, int position) {
+        Node newNode = new Node(data);
+        if (position == 1) {
+            newNode.next = head;
+            head = newNode;
+            return;
+        }
+
+        Node curr = head;
+        for (int i = 1; i < position - 1 && curr != null; i++) {
+            curr = curr.next;
+        }
+
+        if (curr == null) {
+            System.out.println("Position out of range");
+            return;
+        }
+
+        newNode.next = curr.next;
+        curr.next = newNode;
+    }
+
 }
 
 
@@ -85,6 +108,11 @@ public class Operations {
 
         list.deleteNode(40);
         System.out.println("\nAfter deleting 40:");
+        list.display();
+
+        // Insert at a perticular position
+        list.insertAtPosition(25, 4);
+        System.out.println("\nAfter inserting 25 at position 4:");
         list.display();
 
     }
