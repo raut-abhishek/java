@@ -12,7 +12,7 @@ class Node {
 
 class LinkedList {
 
-    
+
     Node head;
     void insertAtBeginning(int data) {
         Node newNode = new Node(data);
@@ -28,6 +28,19 @@ class LinkedList {
         }
         System.out.println("null");
     }
+
+    void insertAtEnd(int data) {
+        Node newNode = new Node(data);
+        if (head == null) {
+            head = newNode;
+            return;
+        }
+        Node curr = head;
+        while (curr.next != null) {
+            curr = curr.next;
+        }
+        curr.next = newNode;
+    }
 }
 
 
@@ -38,6 +51,15 @@ public class Operations {
         // Insert at beginning
         list.insertAtBeginning(5);
         System.out.println("\nAfter inserting 5 at beginning:");
+        list.display();
+
+        list.insertAtEnd(10);
+        list.insertAtEnd(20);
+        list.insertAtEnd(30);
+        list.insertAtEnd(40);
+        list.insertAtEnd(50);
+
+        System.out.println("\nafter inserting at last:");
         list.display();
 
     }
