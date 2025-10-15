@@ -11,10 +11,14 @@ class Node {
 }
 
 class LinkedList {
-    Node head;
-
 
     
+    Node head;
+    void insertAtBeginning(int data) {
+        Node newNode = new Node(data);
+        newNode.next = head;
+        head = newNode;
+    }
 
     void display() {
         Node curr = head;
@@ -31,6 +35,9 @@ public class Operations {
     public static void main(String[] args) {
         LinkedList list = new LinkedList();
 
+        // Insert at beginning
+        list.insertAtBeginning(5);
+        System.out.println("\nAfter inserting 5 at beginning:");
         list.display();
 
     }
