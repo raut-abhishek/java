@@ -101,6 +101,20 @@ class LinkedList {
 
         System.out.println("Middle element: " + slow.data);
     }
+
+    void reverse() {
+        Node prev = null;
+        Node curr = head;
+        Node next = null;
+
+        while (curr != null) {
+            next = curr.next;
+            curr.next = prev;
+            prev = curr;
+            curr = next;
+        }
+        head = prev;
+    }
 }
 
 
@@ -133,6 +147,10 @@ public class Operations {
 
 
         list.findMiddle();
+
+        list.reverse();
+        System.out.println("\nAfter reversing the list:");
+        list.display();
 
     }
 }
