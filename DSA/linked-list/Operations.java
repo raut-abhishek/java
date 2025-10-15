@@ -41,6 +41,27 @@ class LinkedList {
         }
         curr.next = newNode;
     }
+
+    void deleteNode(int value) {
+        if (head == null) return;
+
+        if (head.data == value) {
+            head = head.next;
+            return;
+        }
+
+        Node curr = head;
+        while (curr.next != null && curr.next.data != value) {
+            curr = curr.next;
+        }
+
+        if (curr.next == null) {
+            System.out.println("Value not found");
+            return;
+        }
+
+        curr.next = curr.next.next;
+    }
 }
 
 
@@ -60,6 +81,10 @@ public class Operations {
         list.insertAtEnd(50);
 
         System.out.println("\nafter inserting at last:");
+        list.display();
+
+        list.deleteNode(40);
+        System.out.println("\nAfter deleting 40:");
         list.display();
 
     }
