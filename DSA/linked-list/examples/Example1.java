@@ -1,26 +1,26 @@
-class Example1{
+class Example1 {
     Node head;
     int size;
 
-    Example1(){
+    Example1() {
         this.size = 0;
     }
 
-    class Node{
+    class Node {
         String data;
         Node next;
 
-        Node(String data){
+        Node(String data) {
             this.data = data;
             this.next = null;
             size++;
         }
-    }  
+    }
 
     // add- first
-    public void addFirst(String data){
+    public void addFirst(String data) {
         Node newNode = new Node(data);
-        if(head == null){
+        if (head == null) {
             head = newNode;
             return;
         }
@@ -30,29 +30,29 @@ class Example1{
     }
 
     // add last
-    public void addlast(String data){
+    public void addlast(String data) {
         Node newNode = new Node(data);
-        if(head == null){
+        if (head == null) {
             head = newNode;
             return;
         }
 
         Node currNode = head;
-        while(currNode.next != null){
+        while (currNode.next != null) {
             currNode = currNode.next;
         }
 
         currNode.next = newNode;
-        
+
     }
 
     // print list
-    public void printList(){
-        if(head == null){
+    public void printList() {
+        if (head == null) {
             System.out.println("List is empty");
         }
         Node currNode = head;
-        while(currNode != null){
+        while (currNode != null) {
             System.out.print(currNode.data + " -> ");
             currNode = currNode.next;
         }
@@ -61,9 +61,9 @@ class Example1{
     }
 
     // delete first node
-    public void deleteFirst(){
+    public void deleteFirst() {
         Node currNode = head;
-        if(head == null){
+        if (head == null) {
             System.out.println("List is empty");
             return;
         }
@@ -73,31 +73,31 @@ class Example1{
     }
 
     // Delete last node
-    public void deletelast(){
-        if(head == null){
+    public void deletelast() {
+        if (head == null) {
             System.out.println("List is empty");
             return;
         }
         size--;
-        if(head.next == null){
+        if (head.next == null) {
             head = null;
             return;
         }
 
         Node secondLast = head;
         Node lastNode = head.next;
-        while(lastNode.next != null){
+        while (lastNode.next != null) {
             lastNode = lastNode.next;
             secondLast = secondLast.next;
         }
         secondLast.next = null;
     }
 
-    public int getSize(){
+    public int getSize() {
         return size;
     }
 
-    public static void main(String[] args){
+    public static void main(String[] args) {
         Example1 list = new Example1();
         list.addFirst("a");
         list.addFirst("is");
@@ -109,7 +109,7 @@ class Example1{
         System.out.println("After deleting the first node:");
         list.deleteFirst();
         list.printList();
-        
+
         System.out.println();
         System.out.println("After deleting the last node:");
         list.deletelast();
