@@ -54,12 +54,28 @@ class Example1{
 
     }
 
+    // delete first node
+    public void deleteFirst(){
+        Node currNode = head;
+        if(head == null){
+            System.out.println("List is empty");
+            return;
+        }
+        head = currNode.next;
+
+    }
+
     public static void main(String[] args){
         Example1 list = new Example1();
         list.addFirst("a");
         list.addFirst("is");
         list.addFirst("This");
         list.addlast("list");
+        list.printList();
+
+        System.out.println();
+        System.out.println("After deleting the first node:");
+        list.deleteFirst();
         list.printList();
     }
 }
