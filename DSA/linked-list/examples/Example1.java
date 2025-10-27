@@ -1,5 +1,10 @@
 class Example1{
     Node head;
+    int size;
+
+    Example1(){
+        this.size = 0;
+    }
 
     class Node{
         String data;
@@ -8,6 +13,7 @@ class Example1{
         Node(String data){
             this.data = data;
             this.next = null;
+            size++;
         }
     }  
 
@@ -61,6 +67,7 @@ class Example1{
             System.out.println("List is empty");
             return;
         }
+        size--;
         head = currNode.next;
 
     }
@@ -71,6 +78,7 @@ class Example1{
             System.out.println("List is empty");
             return;
         }
+        size--;
         if(head.next == null){
             head = null;
             return;
@@ -83,6 +91,10 @@ class Example1{
             secondLast = secondLast.next;
         }
         secondLast.next = null;
+    }
+
+    public int getSize(){
+        return size;
     }
 
     public static void main(String[] args){
@@ -102,5 +114,8 @@ class Example1{
         System.out.println("After deleting the last node:");
         list.deletelast();
         list.printList();
+
+        System.out.println();
+        System.out.println("Size of the list is: " + list.getSize());
     }
 }
