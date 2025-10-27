@@ -65,6 +65,26 @@ class Example1{
 
     }
 
+    // Delete last node
+    public void deletelast(){
+        if(head == null){
+            System.out.println("List is empty");
+            return;
+        }
+        if(head.next == null){
+            head = null;
+            return;
+        }
+
+        Node secondLast = head;
+        Node lastNode = head.next;
+        while(lastNode.next != null){
+            lastNode = lastNode.next;
+            secondLast = secondLast.next;
+        }
+        secondLast.next = null;
+    }
+
     public static void main(String[] args){
         Example1 list = new Example1();
         list.addFirst("a");
@@ -76,6 +96,11 @@ class Example1{
         System.out.println();
         System.out.println("After deleting the first node:");
         list.deleteFirst();
+        list.printList();
+        
+        System.out.println();
+        System.out.println("After deleting the last node:");
+        list.deletelast();
         list.printList();
     }
 }
