@@ -9,6 +9,7 @@ public class IfElseCondition {
         else{
             System.out.println("Adult");
         }
+        sc.close();
     }
 }
   

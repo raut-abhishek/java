@@ -17,6 +17,7 @@ public class ArrayQuestion4 {
             
             sum += numbers[i];
         }
-        System.out.print(sum);       
+        System.out.print(sum);   
+        sc.close();    
     }
 }

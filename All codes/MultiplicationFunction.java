@@ -11,6 +11,7 @@ public class MultiplicationFunction {
         System.out.print("Enter second number = ");
         int b = sc.nextInt();
         Multiplication(a, b);
+        sc.close();
 
     }
 }

@@ -19,6 +19,7 @@ public class CalculateGDC {
         int b = sc.nextInt();
         int c = GDCcalculator(a, b);
         System.out.println("Greatest Common Divisor of " + a + " & " + b + " is " + c);
+        sc.close();
     }
 
 }

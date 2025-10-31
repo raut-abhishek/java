@@ -20,6 +20,7 @@ public class GreaterOfTwoFunction {
         System.out.print("Enter second number = ");
         int b = sc.nextInt();
         GreaterOfTwo(a, b);
+        sc.close();
     }
 
 }

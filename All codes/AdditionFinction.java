@@ -12,5 +12,6 @@ public class AdditionFinction {
         int b = sc.nextInt();
         Addition(a, b);
 
+        sc.close();
     }
 }

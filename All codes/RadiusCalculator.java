@@ -11,6 +11,6 @@ public class RadiusCalculator {
         System.out.print("Enter radius of a circle = ");
         double a = sc.nextDouble();
         CalculateRadius(a);
-
+        sc.close();
     }
 }

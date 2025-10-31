@@ -25,5 +25,6 @@ public class DisplayCount {// enter the numbers till user wants and at the end i
         System.out.println("Positive numbers entered : " + PositiveCount);
         System.out.println("Negative numbers entered : " + NegativeCount);
         System.out.println("Zero's entered : " + ZeroCount);
+        sc.close();
     }
 }

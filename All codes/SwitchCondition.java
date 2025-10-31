@@ -16,6 +16,7 @@ public class SwitchCondition {
             default:System.out.println("you must choose a number from 1 to 4");
                 break;
         }
+        sc.close();
     
     }
 }

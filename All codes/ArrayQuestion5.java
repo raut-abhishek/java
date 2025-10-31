@@ -14,5 +14,6 @@ public class ArrayQuestion5 {
         }
         Arrays.sort(numbers);
         System.out.print("The maximum number is ; " + numbers[n-1] + ".");        
+        sc.close();
     }
 }

@@ -13,6 +13,6 @@ public class PowerCalculator {
         System.out.print("Enter power : ");
         int exponent = sc.nextInt();
         CalculatePower(base, exponent);
-
+        sc.close();
     }
 }

@@ -19,5 +19,6 @@ public class FactorialFunction {
         System.out.print("Enter a number = ");
         int a = sc.nextInt();
         PrintFactorial(a);
+        sc.close();
     }
 }

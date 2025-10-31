@@ -14,5 +14,6 @@ public class EligibleVoter {
         System.out.print("Enter age = ");
         int a = sc.nextInt();
         EligibilityCalculator(a);
+        sc.close();
     }
 }

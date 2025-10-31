@@ -15,5 +15,6 @@ public class AverageFunction {
         System.out.print("Enter third number = ");
         int c = sc.nextInt();
         CalculateAverage(a, b, c);
+        sc.close();
     }
 }
