@@ -1,4 +1,4 @@
-import java.util.*;
+
 public class PalinddromicPattern {
     public static void main(String[] args) {
         int n=5;

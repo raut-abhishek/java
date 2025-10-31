@@ -1,4 +1,3 @@
-import java.util.*;
 
 public class SolidRombusPattern {
     public static void main(String[] args) {
