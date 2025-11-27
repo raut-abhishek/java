@@ -44,9 +44,9 @@ public class StackInArraylist {
         s.push(20);
         s.push(30);
 
-        System.out.println("Top = " + s.peek());  // 30
-        System.out.println("Popped = " + s.pop()); // 30
-        System.out.println("Top now = " + s.peek()); // 20
-        System.out.println("Size = " + s.size()); // 2
+        System.out.println("Top = " + s.peek()); 
+        System.out.println("Popped = " + s.pop()); 
+        System.out.println("Top now = " + s.peek());
+        System.out.println("Size = " + s.size());
     }
 }
