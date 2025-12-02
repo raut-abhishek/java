@@ -1,6 +1,6 @@
 // iteration in HashMap
 
-import java.util.HashMap;
+import java.util.*;
 
 
 public class HashMap1 {
@@ -38,8 +38,14 @@ public class HashMap1 {
         // Iterating through the HashMap
         for(String key : map.keySet()){
             System.out.println(key + " : " + map.get(key));
+        } 
+
+
+        // Another way to iterate through the HashMap
+        for(Map.Entry<String, Integer> e : map.entrySet()){
+            System.out.println(e.getKey() + " : " + e.getValue());
         }
-        
-        
+
+
     }
 }
