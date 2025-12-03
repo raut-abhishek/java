@@ -1,3 +1,4 @@
+package HashMap;
 // Implementation of HashMap using Array of Linked Lists
 
 class MyHashMap {
@@ -26,7 +27,7 @@ class MyHashMap {
     
     private int getBucketIndex(String key) {
         return Math.abs(key.hashCode()) % capacity;
-    }
+    } 
 
     
     public void put(String key, int value) {

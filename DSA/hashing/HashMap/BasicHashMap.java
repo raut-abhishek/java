@@ -1,3 +1,4 @@
+package HashMap;
 // Basic HashMap operations in Java
 
 import java.util.HashMap;
