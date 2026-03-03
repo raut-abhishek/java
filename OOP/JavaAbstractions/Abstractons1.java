@@ -18,6 +18,8 @@ class Chicken extends Animal{
 
 public class Abstractons1 {
     public static void main(String[] args) {
+        Horse h1 = new Horse();
+        h1.walk();
         
     }
 }
