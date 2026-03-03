@@ -1,10 +1,17 @@
 package JavaAbstractions;
 
 abstract class Animal{
+    Animal(){
+        System.out.println("Animal constructor is called");
+    }
     abstract void walk();
 }
 
 class Horse extends Animal{
+    Horse(){
+        System.out.println("Horse constructor is called");
+
+    }
     public void walk(){
         System.out.println("Horse walks on 4 legs.");
     }
